@@ -11,7 +11,6 @@ const changeBackgroundColorEvery5Seconds = (element) => {
     const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#70C1B9', '#FF6347', '#40E0D0', '#FF4500', '#20B2AA'];
     setInterval(() => {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        console.log(randomColor)
         changeBackgroundColor(element, randomColor);
     }, 5000);
 };
