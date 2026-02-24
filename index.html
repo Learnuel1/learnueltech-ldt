@@ -1,16 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEARNUELTECH </title>
-    <link rel="stylesheet" href="./src/styles/index.css" type="text/css" media="screen">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>LearnuelTech · Master the Tech Skills of Tomorrow</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
-        <h1>WELCOME TO LEARNUEL TECHNOLOGIES LIMITED</h1>
-    </div>
-<script src="./index.js" type="module"></script>    
-</body>
 
+<!-- HEADER (exact match with hamburger menu content from image) -->
+<header class="site-header">
+  <div class="container header-container">
+    <div class="logo">
+      <img src="images/LearnuelTech Icon 2.png" alt="LearnuelTech logo" class="logo-img">
+      LearnuelTech
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav" id="nav">
+      <div class="menu-header">
+        <img src="images/LearnuelTech Icon 2.png" alt="LearnuelTech logo" class="menu-logo-img">
+        LearnuelTech
+        <button class="close-btn" id="closeNav" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-history"></i> Our Story</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <a href="#" class="mobile-enroll">Enroll <i class="fas fa-arrow-right"></i></a>
+      <div class="mobile-social">
+        <p>FOLLOW US</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="menu-overlay" id="overlay"></div>
+</header>
+
+<main>
+  <!-- HERO SECTION (with overline exactly as image) -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="overline">ACCELERATE YOUR CAREER</span>
+        <h1>Master the Tech Skills of Tomorrow</h1>
+        <p class="hero-subtitle">Industry-leading training and technical services designed to help you break into tech or scale your professional capabilities.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Enroll Now <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn btn-outline">View Services</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600" alt="Two professionals collaborating" loading="lazy">
+        <div class="hero-badge">
+          <i class="fas fa-rocket" style="color:#f57c00;"></i>
+          <div>
+            <small>New Course</small><br>
+            <strong>Data Science 2026</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS (exact values and stars) -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">30+</span>
+        <span class="stat-label">GRADUATES</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">5.0</span>
+        <span class="stat-label"><span class="stars">★★★★★</span></span>
+        <span class="stat-label">Avg Rating</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">12</span>
+        <span class="stat-label">EXPERT MENTORS</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">95%</span>
+        <span class="stat-label">JOB SUCCESS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE SERVICES (exact descriptions) -->
+  <section class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Core Services</h2>
+        <p class="section-subhead">Focused learning paths designed to take you from zero to industry-ready.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Programming -->
+        <div class="service-card">
+          <div class="icon icon-blue"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <p>Master logic and coding basics with Python, Java, and C++. Build a solid foundation for any tech career.</p>
+          <a href="#" class="explore-link">Explore Path <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <!-- SQL Mastery -->
+        <div class="service-card">
+          <div class="icon icon-orange"><i class="fas fa-database"></i></div>
+          <h3>SQL Mastery</h3>
+          <p>Deep dive into database management, complex queries, and data architecture essentials for back-end dev.</p>
+          <a href="#" class="explore-link">Explore Path <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <!-- Web Development -->
+        <div class="service-card">
+          <div class="icon icon-green"><i class="fas fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Build modern, responsive websites using React, Node.js, and Tailwind CSS. Full-stack expertise.</p>
+          <a href="#" class="explore-link">Explore Path <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <!-- Data Analytics -->
+        <div class="service-card">
+          <div class="icon icon-purple"><i class="fas fa-chart-line"></i></div>
+          <h3>Data Analytics</h3>
+          <p>Transform raw data into actionable insights with visualization tools and advanced statistical models.</p>
+          <a href="#" class="explore-link">Explore Path <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (exact names and roles) -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Student Success Stories</h2>
+      <p class="section-subhead">See how LearnuelTech has helped students from various backgrounds land their dream roles.</p>
+      <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimonialTrack">
+          <!-- Progress -->
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>I started with zero coding knowledge, but in just 4 months I developed strong skills in HTML, CSS, JavaScript, and SQL through practical, real-world projects. The transformation has been incredible. LearnuelTech is truly where serious tech careers begin.</blockquote>
+            <div class="student">
+              <img src="https://via.placeholder.com/48" alt="Progress" class="student-photo">
+              <div>
+                <strong>Progress</strong>
+                <span>okechukwuchiemerie01@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <!-- Marcus Chen -->
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Mastering  through LearnuelTech was the best career move I've made. The practical, hands-on labs helped me understand complex data structures immediately."</blockquote>
+            <div class="student">
+              <img src="https://via.placeholder.com/48" alt="Marcus Chen" class="student-photo">
+              <div>
+                <strong>Marcus Chen</strong>
+                <span>Data Analyst @ Global Data</span>
+              </div>
+            </div>
+          </div>
+          <!-- David Wilson -->
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The Data Analytics program gave me the confidence to present insights to leadership. I've already received a promotion since completing the course."</blockquote>
+            <div class="student">
+              <img src="https://via.placeholder.com/48" alt="David Wilson" class="student-photo">
+              <div>
+                <strong>David Wilson</strong>
+                <span>Senior Analyst @ FinTech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+          <button class="carousel-btn next" id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER CTA -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Ready to launch your tech career?</h2>
+      <p>Join 30+ successful graduates and start your journey today. Get early access to new course announcements and tech trends.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-light">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER (exact links and info) -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="logo" style="color:white;">
+        <img src="images/LearnuelTech Icon 2.png" alt="LearnuelTech logo" class="logo-img">
+        LearnuelTech
+      </div>
+      <p style="margin-top: var(--space-sm);">Empowering the next generation of tech leaders through world-class training and mentorship.</p>
+      <div class="social-icons" style="margin-top: var(--space-sm);">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Courses</a></li>
+        <li><a href="#">Success Stories</a></li>
+        <li><a href="#">Technical Services</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> hello@learnueltech.com</li>
+        <li><i class="fas fa-phone"></i> +1 (555) 000-TECH</li>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Silicon Valley, CA</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Working Hours</h4>
+      <ul class="hours-list">
+        <li>Mon - Fri: 9am - 6pm</li>
+        <li>Saturday: 10am - 4pm</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 LearnuelTech. All rights reserved.</p>
+      <ul class="legal-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Settings</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript for mobile menu, accordion, carousel -->
+<script src="script.js" defer></script>
+</body>
 </html>
